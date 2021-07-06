@@ -1,6 +1,27 @@
-<div class="card">
+<div class="card bg-light shadow">
   <div class="card-body">
-    <h4 class="card-title">Title</h4>
-    <p class="card-text">Text</p>
+    <h4 class="card-title text-center">Add Appointment</h4>
+    <div class="form-group mb-3">
+      <label for="name">Name</label>
+      <input type="text"
+        class="form-control" name="name" placeholder="Enter name">
+    </div>
+    <div class="form-group mb-3">
+      <label for="date">Date</label>
+      <input type="date"
+        class="form-control" name="date">
+    </div>
+    <div class="form-group mb-3">
+      <label for="hour">Hour</label>
+      <input type="time"
+        class="form-control" name="hour">
+    </div>
+    <div class="form-group mb-3">
+      <label for="symptom">Symptom</label>
+      <textarea class="form-control" name="symptom" rows="3" placeholder="Enter your symptom"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block w-100 mb-3">
+      Submit
+    </button>
   </div>
 </div>

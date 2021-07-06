@@ -12,3 +12,7 @@ body {
   font-family: 'Nerko One', cursive;
   color: #ffffff;
 }
+
+label {
+  font-weight: 600;
+}
