@@ -6,7 +6,7 @@
       </div>
       <div class="col-lg-6">
         <ng-container *ngIf="recordList.length > 0; else elseTemplate">
-          <app-list-appointment *ngFor="let record of recordList; index as i" [record]="record" [index]="i"></app-list-appointment>
+          <app-list-appointment *ngFor="let record of recordList; index as i" [record]="record" [index]="i" (deleteEmitter)="deleteRecord($event)"></app-list-appointment>
         </ng-container>
         <ng-template #elseTemplate>
           <div class="card my-4">

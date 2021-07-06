@@ -1,9 +1,9 @@
 <div class="card my-4">
   <div class="card-body">
-    <p><span class="fs-5 font-weight-bold">Name:</span> {{ record.name }}</p>
-    <p><span class="fs-5 font-weight-bold">Date:</span> {{ record.date }}</p>
-    <p><span class="fs-5 font-weight-bold">Hour:</span> {{ record.hour }}</p>
-    <p><span class="fs-5 font-weight-bold">Symptom</span> {{ record.symptom }}</p>
+    <label for="name" class="fs-5 mb-2">Name: </label><span> {{ record.name }}</span><br>
+    <label for="date" class="fs-5 mb-2">Date: </label><span> {{ record.date }}</span><br>
+    <label for="hour" class="fs-5 mb-2">Hour: </label><span> {{ record.hour }}</span><br>
+    <label for="symptom" class="fs-5 mb-2">Symptom: </label><span> {{ record.symptom }}</span><br>
     <button type="button" (click)="onDelete()" class="btn btn-danger btn-block w-100">Delete</button>
   </div>
 </div>

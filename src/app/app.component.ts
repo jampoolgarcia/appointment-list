@@ -12,6 +12,10 @@ export class AppComponent {
   addRecord(record: AppointmentI){
     this.recordList.push(record);
   }
-  
+
+  deleteRecord(index: number){
+    this.recordList.splice(index, 1);
+  }
+
 
 }
