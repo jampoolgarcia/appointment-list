@@ -1,6 +1,7 @@
 // core modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 // root component
 import { AppComponent } from './app.component';
@@ -20,7 +21,8 @@ import { ListAppointmentComponent } from './components/list-appointment/list-app
   ],
   imports: [
     // core
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
-<div class="card">
+<div class="card my-4">
   <div class="card-body">
-    <h4 class="card-title text-center">List Appointment</h4>
-    
+    <p><span class="fs-5 font-weight-bold">Name:</span> {{ record.name }}</p>
+    <p><span class="fs-5 font-weight-bold">Date:</span> {{ record.date }}</p>
+    <p><span class="fs-5 font-weight-bold">Hour:</span> {{ record.hour }}</p>
+    <p><span class="fs-5 font-weight-bold">Symptom</span> {{ record.symptom }}</p>
+    <button type="button" (click)="onDelete()" class="btn btn-danger btn-block w-100">Delete</button>
   </div>
 </div>

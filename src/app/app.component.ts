@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppointmentI } from './model/appointment';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'appointment-list';
+  public recordList: AppointmentI[] = [];
+
+  addRecord(record: AppointmentI){
+    this.recordList.push(record);
+  }
+  
+
 }

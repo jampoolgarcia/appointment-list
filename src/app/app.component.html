@@ -2,10 +2,19 @@
   <h1 class="text-center title">App Appointment</h1>
     <div class="row m-2">
       <div class="col-lg-6">
-        <app-form-appointment></app-form-appointment>
+        <app-form-appointment (addEmitter)="addRecord($event)"></app-form-appointment>
       </div>
       <div class="col-lg-6">
-        <app-list-appointment></app-list-appointment>
+        <ng-container *ngIf="recordList.length > 0; else elseTemplate">
+          <app-list-appointment *ngFor="let record of recordList; index as i" [record]="record" [index]="i"></app-list-appointment>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="card my-4">
+            <div class="card-body">
+              <h4 class="card-title text-center">No appointment to show...</h4>
+            </div>
+          </div>
+        </ng-template>
       </div>
     </div>
 </div>
